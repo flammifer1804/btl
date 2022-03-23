@@ -1,0 +1,86 @@
+.margin_10 {
+  margin: 0 15%;
+}
+
+.place-holder {
+  height: 75px;
+}
+
+.grid-1{
+    grid-row: 1;
+}
+
+.navigator {
+  position: fixed;
+  width: 100%;
+  letter-spacing: 4px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 60% auto;
+    background-color: $nav-color;
+    padding: 5px 30px;
+  }
+
+  &__logo {
+    padding-left: 20px;
+
+    &:first-child {
+      max-width: 150px;
+    }
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-size: 16px;
+    align-items: center;
+
+    a {
+      padding: 5px;
+      border-radius: 10px;
+    }
+
+    a:hover{        
+      background-color: $hover-color;
+    }
+  }
+}
+
+.main {
+    padding-bottom: 30px;
+    
+  &__box {
+    @include content;
+  }
+
+  h4,
+  p {
+    padding: 10px 0;
+  }
+
+  &__form{
+    width: 100%;
+    font-size: 14px;
+    padding: 5px;
+    margin: 3px 0;
+    border: 1px solid $default-color;
+    background-color: $text-color
+  }
+
+  &__hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  button{
+    width: 50px;
+  }
+}
+
+.footer{
+    padding: 20px;
+    text-align: center;
+    background-color: $nav-color;
+}
